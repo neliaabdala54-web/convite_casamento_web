@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Convite de casamento de Néli & Akim — um convite especial para celebrar a nossa união."
+    />
+    <title>Néli &amp; Akim | Convite de Casamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="opening" id="opening" aria-label="Abrir convite de casamento">
+        <div class="envelope-wrap">
+          <div class="envelope" id="envelope">
+            <svg class="envelope-base" viewBox="233 172 1076 706" aria-hidden="true" focusable="false">
+              <defs>
+                <mask id="envelope-base-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1536" height="1024">
+                  <path d="M233 172 H1309 V878 H233 Z" fill="white" />
+                  <path d="M233 172 H1309 L1272 262 L770 551 L269 262 Z" fill="black" />
+                  <ellipse cx="760" cy="510" rx="170" ry="180" fill="black" />
+                </mask>
+              </defs>
+              <image href="./assets/envlop.jpeg" width="1536" height="1024" mask="url(#envelope-base-mask)" />
+            </svg>
+            <div class="invitation-card" aria-hidden="true">
+              <span>N</span>
+              <span class="first-screen-ampersand">e</span>
+              <span>A</span>
+            </div>
+            <svg class="envelope-front" viewBox="233 172 1076 706" aria-hidden="true" focusable="false">
+              <defs>
+                <clipPath id="envelope-front-clip" clipPathUnits="userSpaceOnUse">
+                  <path d="M233 878 L760 510 L1309 878 Z" />
+                </clipPath>
+                <mask id="envelope-front-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1536" height="1024">
+                  <rect width="1536" height="1024" fill="white" />
+                  <ellipse cx="760" cy="510" rx="170" ry="180" fill="black" />
+                </mask>
+              </defs>
+              <image href="./assets/envlop.jpeg" width="1536" height="1024" clip-path="url(#envelope-front-clip)" mask="url(#envelope-front-mask)" />
+            </svg>
+            <svg class="seal-orbit" viewBox="233 172 1076 706" aria-hidden="true" focusable="false">
+              <circle class="seal-orbit-tracer" cx="760" cy="510" r="145" pathLength="1000" />
+            </svg>
+            <div class="envelope-flap">
+              <svg class="envelope-flap-art" viewBox="233 172 1076 706" aria-hidden="true" focusable="false">
+                <defs>
+                  <clipPath id="envelope-flap-clip" clipPathUnits="userSpaceOnUse">
+                    <path d="M233 172 H1309 L1272 262 L770 551 L269 262 Z" />
+                  </clipPath>
+                  <clipPath id="envelope-seal-clip" clipPathUnits="userSpaceOnUse">
+                    <ellipse cx="760" cy="510" rx="170" ry="180" />
+                  </clipPath>
+                </defs>
+                <image href="./assets/envlop.jpeg" width="1536" height="1024" clip-path="url(#envelope-flap-clip)" />
+                <image href="./assets/envlop.jpeg" width="1536" height="1024" clip-path="url(#envelope-seal-clip)" />
+              </svg>
+              <button class="seal" id="sealButton" type="button" aria-label="Abrir o envelope">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="invitation" id="invitation" aria-hidden="true">
+        <section class="first-screen" aria-labelledby="heroTitle">
+          <img class="first-screen-rose scroll-reveal scroll-reveal--rose" src="./assets/rosa-transparente.png" alt="" aria-hidden="true" />
+          <img class="first-screen-rose first-screen-rose--right scroll-reveal scroll-reveal--rose" src="./assets/rosa-transparente.png" alt="" aria-hidden="true" />
+          <div class="first-screen-content">
+            <svg class="first-screen-heart scroll-reveal" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 41S5 29 5 16C5 9 10 5 16 5c4 0 7 2 8 6 2-4 5-6 9-6 6 0 11 4 11 11 0 13-20 25-20 25Z" />
+            </svg>
+            <p class="first-screen-copy scroll-reveal scroll-reveal--text">
+            É com muita honra que convidamos o Sr./Senhora ao nosso casamento.
+            </p>
+            <h1 id="heroTitle" class="first-screen-initials scroll-reveal scroll-reveal--initials">
+              <span class="first-screen-initial-letter">N</span><span class="first-screen-ampersand">e</span><span class="first-screen-initial-letter">A</span>
+            </h1>
+          <img
+            class="first-screen-photo scroll-reveal scroll-reveal--photo"
+            src="./assets/casal.jpeg"
+            alt="Néli e Akim juntos no dia do casamento"
+          />
+          <div class="first-screen-details">
+            <p class="first-screen-date scroll-reveal scroll-reveal--text">11 de dezembro de 2026</p>
+            <div
+              class="first-screen-countdown scroll-reveal"
+              id="weddingCountdown"
+              data-target="2026-12-11T09:00:00+02:00"
+              role="timer"
+              aria-label="Contagem decrescente para o casamento"
+            >
+              <div class="first-screen-countdown-unit">
+                <span class="first-screen-countdown-value" id="countdownDays">00</span>
+                <span class="first-screen-countdown-label">Dias</span>
+              </div>
+              <span class="first-screen-countdown-separator" aria-hidden="true">:</span>
+              <div class="first-screen-countdown-unit">
+                <span class="first-screen-countdown-value" id="countdownHours">00</span>
+                <span class="first-screen-countdown-label">Horas</span>
+              </div>
+              <span class="first-screen-countdown-separator" aria-hidden="true">:</span>
+              <div class="first-screen-countdown-unit">
+                <span class="first-screen-countdown-value" id="countdownMinutes">00</span>
+                <span class="first-screen-countdown-label">Min</span>
+              </div>
+              <span class="first-screen-countdown-separator" aria-hidden="true">:</span>
+              <div class="first-screen-countdown-unit">
+                <span class="first-screen-countdown-value" id="countdownSeconds">00</span>
+                <span class="first-screen-countdown-label">Seg</span>
+              </div>
+            </div>
+            <p class="first-screen-countdown-message" id="countdownComplete" aria-live="polite" hidden>
+              Hoje é o grande dia!
+            </p>
+            <p class="first-screen-union scroll-reveal scroll-reveal--text">Celebraremos a união de</p>
+            <div class="first-screen-names scroll-reveal" aria-label="Área para os nomes dos noivos">
+              <p class="first-screen-name first-screen-name--first">Néli Abacar</p>
+              <p class="first-screen-name first-screen-name--second">Akim Abacar</p>
+            </div>
+            <p class="first-screen-venue scroll-reveal scroll-reveal--text">Esperamos por ti no Salão Tsaka, Maxixe</p>
+            <p class="first-screen-time scroll-reveal scroll-reveal--text">Às 9h</p>
+            <section class="first-screen-godparents" aria-labelledby="godparentsTitle">
+              <figure class="first-screen-rings">
+                <img src="./assets/alianças.jpeg" alt="Alianças de casamento" />
+                <figcaption id="godparentsTitle" class="scroll-reveal scroll-reveal--heading">Padrinhos</figcaption>
+                <div class="first-screen-godparents-names">
+                  <p><span>Madrinha</span>Amelia Cossa</p>
+                  <p><span>Padrinho</span>Adam Cossa</p>
+                  <svg class="first-screen-godparents-heart" viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M32 55S7 40 7 23C7 14 13 9 21 9c5 0 9 3 11 8 2-5 6-8 11-8 8 0 14 5 14 14 0 17-25 32-25 32Z" />
+                  </svg>
+                  <p class="first-screen-godparents-nicah" lang="ar" dir="rtl">نكاح</p>
+                </div>
+              </figure>
+            </section>
+          </div>
+          </div>
+        </section>
+
+        <section class="schedule-section" aria-labelledby="scheduleTitle">
+          <svg class="schedule-rose scroll-reveal scroll-reveal--rose" viewBox="0 0 736 1536" aria-hidden="true">
+            <defs>
+              <filter id="scheduleRoseBackground" color-interpolation-filters="sRGB">
+                <feColorMatrix
+                  type="matrix"
+                  values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          3.333 3.333 3.333 0 -0.55"
+                />
+              </filter>
+            </defs>
+            <image
+              href="./assets/rosa-2.jpeg"
+              width="736"
+              height="1536"
+              preserveAspectRatio="xMidYMin slice"
+              filter="url(#scheduleRoseBackground)"
+            />
+          </svg>
+          <div class="schedule-content">
+            <div class="schedule-heading">
+              <h2 id="scheduleTitle" class="scroll-reveal scroll-reveal--heading">Programa do Grande Dia</h2>
+              <p class="scroll-reveal scroll-reveal--text">Será um dia especial, repleto de amor e alegria.</p>
+              <span class="ornament scroll-reveal" aria-hidden="true"><i></i><b>✦</b><i></i></span>
+            </div>
+            <div class="schedule-activities" aria-label="Atividades do casamento">
+              <article class="schedule-activity scroll-reveal">
+                <svg class="schedule-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M9 7h12l-1.5 15a5 5 0 0 1-10 0L9 7Zm1 5h10M15 27v4a7 7 0 0 0 14 0v-4M27 7h12l-1.5 15a5 5 0 0 1-10 0l-.5-5M28 12h10M29 31h10" />
+                  <path d="M8 40h32" />
+                </svg>
+                <h3>RECEÇÃO</h3>
+                <p class="schedule-time">9h</p>
+              </article>
+              <article class="schedule-activity scroll-reveal">
+                <svg class="schedule-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="17" cy="9" r="3" />
+                  <circle cx="31" cy="12" r="3" />
+                  <path d="m17 14-4 9 7 5-4 10m1-19 8 3 5-6m-12 6-7 7m15-10-1 10 7 8m-8-9-8 2m14-13 5 7" />
+                  <path d="m13 38-3 3m12-3 3 3m8-3 3 3" />
+                </svg>
+                <h3>DANÇA</h3>
+                <p class="schedule-time">15h</p>
+              </article>
+              <article class="schedule-activity scroll-reveal">
+                <svg class="schedule-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M15 8v14m-5-14v8a5 5 0 0 0 10 0V8m-5 13v19m19-32v29m0-29c-6 5-8 12-8 19h8" />
+                  <path d="M13 40h5m11 0h5" />
+                </svg>
+                <h3>ALMOÇO</h3>
+                <p class="schedule-time">14h</p>
+              </article>
+              <article class="schedule-activity scroll-reveal">
+                <svg class="schedule-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M27 8v24.5a5.5 5.5 0 1 1-3-4.9V13l16-4v19.5a5.5 5.5 0 1 1-3-4.9V6l-10 2Z" />
+                  <path d="M10 17c3 1 4 3 4 6m-8-1c4 1 6 4 6 8" />
+                </svg>
+                <h3>FESTA</h3>
+                <p class="schedule-time">18h</p>
+              </article>
+            </div>
+            <div class="schedule-rsvp">
+              <p class="scroll-reveal scroll-reveal--text">Não te esqueças dos presentes</p>
+              <a
+                class="scroll-reveal"
+                id="scheduleConfirmButton"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span aria-hidden="true">◉</span> Confirmar presença pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <audio id="weddingMusic" preload="auto" loop>
+        <source src="./assets/musica.mpeg" type="audio/mpeg" />
+      </audio>
+      <div class="music-control" id="musicControl" hidden>
+        <button
+          class="music-control-button"
+          id="musicToggleButton"
+          type="button"
+          aria-label="Pausar música"
+          aria-pressed="true"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="music-icon-pause" d="M7 5h4v14H7zM15 5h4v14h-4z" />
+            <path class="music-icon-play" d="m8 5 12 7-12 7z" />
+          </svg>
+          <span id="musicControlLabel">Pausar música</span>
+        </button>
+        <span class="music-control-status" id="musicControlStatus" role="status" aria-live="polite"></span>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
